@@ -1,0 +1,281 @@
+:root{
+    --red: #D00000;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins' sans-serif;
+    box-sizing: border-box;
+    outline: none;
+    border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+    
+}
+body{
+    background: #030303;
+    color: #fff;   
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden; 
+}
+
+section{
+    padding: 1rem 9%;
+}
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: #fff;
+    padding: 1rem;
+    margin: 2rem;
+    background: rgba(0, 0, 0, 0.05);
+}
+.heading span{
+    color: var(--red);
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 0.1rem;
+    border-radius: 5rem;
+    background: #6e5757;
+    color: #fff;
+    padding: 1rem 2.1rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover{
+    background:var(--red);
+}
+
+header{
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   background: #030303;
+   padding: 1rem 7%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   z-index: 1000;
+   box-shadow: 0 .5rem 1rem rgb(205, 2, 2);
+
+}
+
+header .logo{
+    font-size: 3rem;
+    color: #fff;
+    font-weight: bolder;
+}
+header .logo span{
+   color: var(--red);
+}
+header .navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #fff;
+}
+header .navbar a:hover{
+    color:var(--red);
+
+}
+header .icons a{
+    font-size: 2.5rem;
+    color: #D00000;
+    margin-left: 2rem;
+}
+header .icons a:hover{
+    color:var(--red);
+}
+header #toggler{
+    display: none;
+}
+header .fa-bars{
+    font-size: 3rem;
+    color: #fff;
+    border-radius: .5rem;
+    padding:.5rem 1.5rem;
+    cursor: pointer;
+    border: 1rem solid rgb(2, 2, 2);
+    display: none;
+}
+
+/*--------------------------------HOME---------------------------------------- */
+
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(image/Pg1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content{
+    max-width: 50rem;
+}
+.home .content h3{
+    font-size: 6rem;
+    color: #fcfcfc;
+}
+.home .content h3 span{
+    color: #D00000;
+    font-size: 6rem;
+}
+.home .content span{
+    font-size: 1.9rem;
+    color: var(--white);
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+.home .content p{
+    font-size: 1.5rem;
+    color: #4e4a4a;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+
+/*--------------------------------ABOUT---------------------------------------- */
+
+.about .row{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+}
+.about .row .video-container{
+    flex:1 1 40rem;
+    position: relative;
+}
+.about .row .video-container video{
+    width: 100%;
+    border:1.5rem solid #080808;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgb(205, 2, 2);
+    height: 100%;
+    object-fit: cover;
+}
+.about .row .video-container h3{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    background: #030303;
+    width: 100%;
+    padding: 1rem 2rem;
+    text-align: center;
+    mix-blend-mode: screen;
+}
+
+.about .row .content{
+    flex:1 1 40rem;
+}
+.about .row .content h3{
+    font-size: 3rem;
+    color: #908d8d;
+}
+.about .row .content p{
+    font-size: 1.5rem;
+    color: #817d7d;
+    padding: 5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+}
+
+/*--------------------------------PRODUCTS---------------------------------------- */
+
+.section-title{
+    font-size: 4rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.section-title span{
+    color: var(--red);
+}
+.Products{
+    margin-top: 5rem;
+}
+
+/*-------BOX--------*/
+
+.products-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(520px, auto));
+    gap: 1.5rem;
+
+}
+
+
+
+/*media quwries */
+
+@media (max-width:991px){
+    html{
+        font-size: 55%;   
+    }
+
+    header{
+        padding: 2rem;
+    }
+    section{
+        padding: 2rem;
+    }
+    .home{
+        background-position: left;
+    }
+}
+
+@media (max-width:768px){
+
+    header .fa-bars{
+        display: block;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #ffffff;
+        border-top: .1rem solid rgb(131, 126, 126);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header #toggler:checked .navbar{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+    }
+
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: #b2b0b0fc;
+        border: .1rem solid rgba(0,0,0,.1);
+        display: block;
+    }
+    .home .content h3{
+        font-size: 5rem;
+    }
+    .home .content span{
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width:450px){
+    html{
+        font-size: 50%;   
+    }
+    .heading{
+        font-size: 3rem;
+    }
+    
+}
