@@ -212,11 +212,45 @@ header .fa-bars{
 
 .products-content{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(520px, auto));
-    gap: 1.5rem;
-
+    grid-template-columns: repeat(auto-fit, minmax(230px, auto));
+    gap: 5rem;
+}
+.products-box{
+    position: relative;
+}
+.products-box:hover{
+    padding: 10px;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgb(205, 2, 2);
+    transition: 0.4s;
+}
+.products-box img{
+    width: 250px;
+    height: 230px;
+    margin-bottom: 2rem;
+   
+}
+.product-titel{
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;   
+}
+.price{
+    font-weight: 500;
+    font-size: 1.4rem;
 }
 
+.products-box a{
+    font-size: 1.4rem;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
+    
+}
 
 
 /*media quwries */
