@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/7d0c4a8e0e.js" crossorigin="anonymous"></script>
 </head>
 <body>
     
@@ -30,8 +31,36 @@
 
     <div class="icons">
         <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="#" class="fas fa-shopping-cart" id="cart-icon"></a>
         <a href="#" class="fas fa-user"></a>
+        
+        <!--cart-->
+        <div class="cart">
+            <h2 class="cart-titel">Your Cart</h2>
+
+            <div class="cart-content">
+                <div class="cart-box">
+                    <img src="image/meta.jpg" alt="" class="cart-img">
+                    <div class="detail-box">
+                        <div class="cart-product-title">Earbuds</div>
+                        <div class="cart-price">Rs 632,722.40</div>
+                        <input type="number" value="1" class="cart-quantity">
+                    </div>
+                    <!--remove-->
+                    <i class="fa-solid fa-trash cart-remove"></i>
+                </div>
+            </div>
+            <!--total-->
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">Rs 0</div>
+            </div>
+            <!--by button-->
+            <button type="button" class="btn-buy">Buy Now</button>
+            <!--close-->
+            <i class="fa-sharp fa-solid fa-xmark" id="close-cart"></i>
+        </div>
+
     </div>
 
 
@@ -44,7 +73,9 @@
     <div class="content">
         <h3>Next Innov<span>ation</span></h3></h3>
         <span>New products and newly introduced electronic devices in the market</span><br>
-        <p>We offer comprehensive consulting services that go beyond a typical platform developer or web design agency. Our team takes your ideas from conceptual stage to full-fledged development and brings it to life with the best possible digital experiences and technologies. You will also be introduced to the latest technical tools.</p>
+        <p>We offer comprehensive consulting services that go beyond a typical platform developer or web design agency. Our team takes your
+            ideas from conceptual stage to full-fledged development and brings it to life with the best possible digital experiences and
+            technologies. You will also be introduced to the latest technical tools.</p>
         <a href="#" class="btn">Shop Now</a>
     </div>
 </section>
@@ -87,7 +118,7 @@
             <img src="image/meta.jpg" alt="" class="product-img">
             <h2 class="product-titel">Meta Quest Pro</h2>
             <span class="price">Rs 632,722.40</span>
-            <a href="#" class="fas fa-shopping-cart" add-cart></a>
+            <a href="#" class="fas fa-shopping-cart add-cart"></a>
         </div>
 
         <!--box 2-->
@@ -96,7 +127,7 @@
             <img src="image/apple watch.jpg"" class="product-img">
             <h2 class="product-titel">Apple Watch Ultra</h2>
             <span class="price">Rs 465,000.00</span>
-            <a href="#" class="fas fa-shopping-cart" add-cart></a>
+            <a href="#" class="fas fa-shopping-cart add-cart"></a>
         </div>
 
     <!--box 3-->
@@ -105,7 +136,7 @@
             <img src="image/irobot.jpg" alt="" class="product-img">
             <h2 class="product-titel">iRobot Roomba J7+</h2>
             <span class="price">Rs 421674.23</span>
-            <a href="#" class="fas fa-shopping-cart" add-cart></a>
+            <a href="#" class="fas fa-shopping-cart add-cart"></a>
         </div>
 
     <!--box 4-->
@@ -114,7 +145,7 @@
             <img src="image/iPhone 14.jpg" alt="" class="product-img">
             <h2 class="product-titel">iPhone-14-Pro</h2>
             <span class="price">Rs 465,000.00</span>
-            <a href="#" class="fas fa-shopping-cart" add-cart></a>
+            <a href="#" class="fas fa-shopping-cart add-cart"></a>
         </div>
 
     <!--box 5-->
@@ -123,7 +154,7 @@
             <img src="image/product2.jpg" alt="" class="product-img">
             <h2 class="product-titel">Beeline Velo 2</h2>
             <span class="price">Rs 42205.41</span>
-            <a href="#" class="fas fa-shopping-cart" add-cart></a>
+            <a href="#" class="fas fa-shopping-cart add-cart"></a>
         </div>
 
     <!--box 6-->
@@ -132,7 +163,7 @@
             <img src="image/0_lenovo.jpg" alt="" class="product-img">
             <h2 class="product-titel">Lenovo Note Book</h2>
             <span class="price">Rs 169,990.00</span>
-            <a href="#" class="fas fa-shopping-cart" add-cart></a>
+            <a href="#" class="fas fa-shopping-cart add-cart"></a>
         </div>
 
     <!--box 7-->
@@ -141,7 +172,7 @@
             <img src="image/vivo v21.png" alt="" class="product-img">
             <h2 class="product-titel">Vivo V21</h2>
             <span class="price">Rs 99,990.00</span>
-            <a href="#" class="fas fa-shopping-cart" add-cart></a>
+            <a href="#" class="fas fa-shopping-cart add-cart"></a>
         </div>
 
     <!--box 8-->
@@ -150,12 +181,13 @@
             <img src="image/Alarm.webp" alt="" class="product-img">
             <h2 class="product-titel">Wireless Charger With <br>Alarm Clock LED Light</h2>
             <span class="price">Rs 9047.50</span>
-            <a href="#" class="fas fa-shopping-cart" add-cart></a>
+            <a href="#" class="fas fa-shopping-cart add-cart"></a>
         </div>      
     </div>
 </section>
+<!--Link Js-->
 
-
+<script src="main.js"></script>
     
 </body>
 </html>
