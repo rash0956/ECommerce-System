@@ -350,6 +350,148 @@ header .fa-bars{
     background: hsl(0, 98%, 17%);
 }
 
+/*--------------------------------REVIEW---------------------------------------- */
+.review .box-conta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    
+}
+.review .box-conta .box{
+    flex: 0 1 50rem;
+    border-bottom: 3px solid var(--red);
+    border-left: 3px solid var(--red);
+    background-color: #151313;
+    border-radius: .10rem;
+    padding: 3rem 2rem;
+    margin: 46px;
+    position: relative;
+    
+}
+.review .box-conta .box .fa-quote-right{
+    position: absolute;
+    bottom: 3rem;
+    right: 3rem;
+    font-size: 3rem;
+    color: #eee;
+}
+.review .box-conta .box .stars i{
+    color: var(--red);
+    font-size: 2rem;
+}
+.review .box-conta .box p{
+    color: #b3a8a8;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding: 2rem;
+}
+.review .box-conta .box .user{
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+}
+.review .box-conta .box .user img{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+.review .box-conta .box .user h3{
+    font-size: 2rem;
+    color: #999;
+}
+.review .box-conta .box .user span{
+    font-size: 1.5rem;
+    color: #999;
+}
+
+/*--------------------------------REVIEW---------------------------------------- */
+
+.contact .row {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 1.5rem;
+    align-items: center;
+}
+.contact .row form{
+    flex: 2 1 40rem;
+    padding: 3rem 3.5rem;
+    box-shadow: 0 .5rem 1.5rem var(--red);
+    background: #141313;
+    border-radius: .5rem;
+}
+.contact .row .image{
+    flex: 1 1 50rem;
+}
+.contact .row .image img{
+    width: 90%;
+}
+.contact .row form .box{
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #e9d9d9;
+    text-transform: none;
+    border: .1rem solid var(--red);
+    border-radius: .5rem;
+    margin: .7rem 0;
+    width: 100%;
+    background: #1b1919;
+}
+.contact .row form .box:focus{
+    border-color: var(--red);
+}
+.contact .row form textarea{
+    height: 12rem;
+    resize: none;
+}
+
+/*--------------------------------Footer section---------------------------------------- */
+.footer{
+    background-color: #0c0b0b;
+    margin-top: 25px;
+    border-top: .1rem solid var(--red);
+}
+.footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: .5rem;
+    
+}
+.footer .box-container .box{
+    flex: 1 1 25rem;
+    margin: .5rem 0;
+    padding: 1rem;
+    max-width: 1170px;
+}
+.footer .box-container .box h3{
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+.footer .box-container .box a{
+    display: block;
+    color: #cfc7c7;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+.footer .box-container .box a:hover{
+    color: var(--red);
+    text-decoration: underline;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 1.5rem;
+    border-top: .1rem solid var(--red);
+    font-weight: 2rem;
+    margin-top: 1.5rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+}
+.copyright .credit span{
+    color: var(--red);
+}
 
 /*media quwries */
 
